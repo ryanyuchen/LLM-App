@@ -85,7 +85,7 @@ export default function PromptSuggestionsRow () {
 
         const stream = OpenAIStream(response);
 
-        return new StreamingTextResponse(strem);
+        return new StreamingTextResponse(stream);
     }
 
     const { 
