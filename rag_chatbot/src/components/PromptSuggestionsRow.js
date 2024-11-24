@@ -64,7 +64,10 @@ export default function PromptSuggestionsRow () {
 
         const template = {
             role: "system",
-            content: `You are AI assistant who knows everything about Formula One
+            content: `You are AI assistant who knows everything about Formula One.
+            Use the below context to augment what you know about Formula One racing.
+            The context will provide you with the most recent page data from wikipedia.
+            If the context doesn't include the information you need answer based on your existing knowledge.
             ------------------
             START CONTEXT
             ${docContext}
